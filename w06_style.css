@@ -1,0 +1,33 @@
+p
+{
+color: brown
+font-weight: normal;
+}
+
+ul
+{
+font-weight: normal;
+text-align: center;
+}
+
+hl
+{
+font-weight: normal;
+text-align: center;
+font-size: 30px;
+}
+
+body 
+{
+background-color: steellightblue;
+font-size: 24px;
+font-weight: normal;
+font-family: American Typewriter, serif;
+}
+img
+{
+width: 75%px;
+height: 150%px;
+border: solid;
+border: 2px solid grey; 
+}
