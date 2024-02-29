@@ -16,9 +16,12 @@ p {
 }
 ul {
   margin: 0;
-  background-color: grey;
+  background-color: darkgrey;
   list-style-type: none;
   padding: 0;
+}
+ul {
+  background-color: #dddddd;
 }
 li {
   float: left;
@@ -29,8 +32,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #333;
 }
-
 li {
   float: left;
 }
@@ -46,10 +49,12 @@ li a {
 .active {
   background-color: #04AA6D;
 }
-
-.wrapper {
-  display: flex;
+li {
+  border-right: 1px solid #bbb;
 }
 
+li:last-child {
+  border-right: none;
+}
 
 
