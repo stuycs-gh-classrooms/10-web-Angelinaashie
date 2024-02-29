@@ -45,5 +45,11 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+img {
+  align: top;
+  align: right; 
+height: 120px;
+  width: 50%;
+}
 
 
