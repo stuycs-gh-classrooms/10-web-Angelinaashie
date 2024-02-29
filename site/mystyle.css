@@ -25,9 +25,6 @@ li {
 }
 
 ul {
-  background-color: #dddddd;
-}
-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -51,8 +48,9 @@ li a {
   background-color: #04AA6D;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+.wrapper {
+  display: flex;
 }
+
 
 
