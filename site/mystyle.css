@@ -47,17 +47,10 @@ li a {
   text-decoration: none;
 }
 
-
 .active {
   background-color: #04AA6D;
 }
 
-<ul>
-  <li><a href="http://homer.stuy.edu/~aashie60/site/index.html">Index</a></li>
-  <li><a href="http://homer.stuy.edu/~aashie60/site/thefirstbook.html">The First Book</a></li>
-  <li><a href="http://homer.stuy.edu/~aashie60/site/influencialliterature.html">Influencial Literature</a></li>
-<li><a href="href="http://homer.stuy.edu/~aashie60/site/famouswriters.html">Famous Writers</a></li>
-</ul>
 
 ul {
   position: fixed;
