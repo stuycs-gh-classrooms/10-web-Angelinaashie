@@ -32,9 +32,9 @@ li {
   float: left;
 }
 div {
-  background-color: lightgrey;
+  background-color: floralwhite;
   width: 1000px;
-  border: 15px solid green;
+  border: 15px darkgoldenrod;
   padding: 50px;
   margin: 20px;
 }
