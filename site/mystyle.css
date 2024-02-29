@@ -16,10 +16,52 @@ p {
 }
 ul {
   margin: 0;
-  background-color: goldenrod;
+  background-color: grey;
   list-style-type: none;
   padding: 0;
 }
 li {
-  display: inline;
+  float: left;
 }
+
+ul {
+  background-color: #dddddd;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+
+<ul>
+  <li><a href="http://homer.stuy.edu/~aashie60/site/index.html">Index</a></li>
+  <li><a href="http://homer.stuy.edu/~aashie60/site/thefirstbook.html">The First Book</a></li>
+  <li><a href="http://homer.stuy.edu/~aashie60/site/influencialliterature.html">Influencial Literature</a></li>
+<li><a href="href="http://homer.stuy.edu/~aashie60/site/famouswriters.html">Famous Writers</a></li>
+</ul>
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
