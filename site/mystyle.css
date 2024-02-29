@@ -1,0 +1,7 @@
+; for text alignment? 
+.box {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+}
