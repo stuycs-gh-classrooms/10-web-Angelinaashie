@@ -31,7 +31,13 @@ ul {
 li {
   float: left;
 }
-
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
 ul {
   list-style-type: none;
   margin: 0;
