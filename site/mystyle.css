@@ -1,8 +1,10 @@
+body {
+  background-color: seashell;
+}
 h1 {
 text-align: center;
   font-size: 55px;
   font-weight: bold;
-  background-color: navajowhite;
 }
 h2 {
 text-align: center;
