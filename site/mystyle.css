@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: goldenrod;
 }
 h1 {
 text-align: center;
@@ -37,7 +37,7 @@ div {
   border: 15px darkgoldenrod;
   padding: 50px;
   margin: 20px;
- border-radius: 25px;
+ border-radius: 15px;
 }
 ul {
   list-style-type: none;
