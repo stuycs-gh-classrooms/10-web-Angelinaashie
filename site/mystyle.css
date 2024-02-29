@@ -9,7 +9,8 @@ text-align: center;
   font-weight: bold;
 }
 
-.jpeg {
+p {
+  font-size: 22px;
   width: 350px;
   height: 150px;
   margin: 10px;
