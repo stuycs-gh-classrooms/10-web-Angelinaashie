@@ -37,6 +37,7 @@ div {
   border: 15px darkgoldenrod;
   padding: 50px;
   margin: 20px;
+ border-radius: 25px;
 }
 ul {
   list-style-type: none;
