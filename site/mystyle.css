@@ -51,12 +51,6 @@ li a {
   background-color: #04AA6D;
 }
 
-
-ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 li a:hover:not(.active) {
     background-color: #111;
 }
