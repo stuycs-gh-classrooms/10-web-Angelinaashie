@@ -1,5 +1,5 @@
 body {
-  background-color: peru;
+  background-color: floralwhite;
 }
 h1 {
 text-align: center;
@@ -13,28 +13,21 @@ text-align: center;
   font-weight: bold;
   font-family: "Courier New";
 }
-
-h4 {
-text-align: 37center;
-  font-size: px;
-  font-weight: bold;
+h3 {
+text-align: center;
+  font-size: 35px;
   font-family: "Courier New";
 }
 
-p {
-  font-size: 30px;
-  text-align: left;
-  text-align: start;
+h4 {
+text-align: center;
+  font-size: 35px;
 }
-#ul {
-  #margin: 0;
-  #background-color: darkgrey;
-  #list-style-type: none;
-  #padding: 0;
-#}
-#ul {
-  #background-color: #dddddd;
-#}
+
+p {
+  font-size: 15px;
+}
+
 li {
   float: left;
 }
@@ -64,6 +57,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-img.wrap {float: right}
+
 
 
