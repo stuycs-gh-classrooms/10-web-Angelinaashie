@@ -1,5 +1,7 @@
 body {
-  background-color: floralwhite;
+  background-color: SeaShell;
+  padding: 15px;
+  border: 2px HoneyDew;
 }
 h1 {
 text-align: center;
@@ -19,31 +21,33 @@ text-align: center;
   font-family: "Courier New";
 }
 
-
-
 hr.dashed {
   border-top: 3px dashed #bbb;
 }
-
 
 hr.solid {
   border-top: 3px solid #bbb;
 }
 p {
-  font-size: 15px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Courier New";
+}
+div {
+  text-align: center;
 }
 
 li {
   float: left;
 }
-div {
-  background-color: floralwhite;
-  width: 1000px;
-  border: 15px darkgoldenrod;
-  padding: 50px;
-  margin: 20px;
- border-radius: 15px;
-}
+#div {
+  #background-color: floralwhite;
+ # width: 1000px;
+  #border: 15px darkgoldenrod;
+#  padding: 50px;
+  #margin: 20px;
+# border-radius: 15px;
+#}
 ul {
   list-style-type: none;
   margin: 0;
