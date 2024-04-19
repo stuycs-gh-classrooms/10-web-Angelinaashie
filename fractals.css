@@ -9,25 +9,32 @@ text-align: center;
 }
 h2 {
 text-align: center;
-  font-size: 60px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Courier New";
+}
+
+h4 {
+text-align: 37center;
+  font-size: px;
   font-weight: bold;
   font-family: "Courier New";
 }
 
 p {
-  font-size: 32px;
+  font-size: 30px;
   text-align: left;
   text-align: start;
 }
-ul {
-  margin: 0;
-  background-color: darkgrey;
-  list-style-type: none;
-  padding: 0;
-}
-ul {
-  background-color: #dddddd;
-}
+#ul {
+  #margin: 0;
+  #background-color: darkgrey;
+  #list-style-type: none;
+  #padding: 0;
+#}
+#ul {
+  #background-color: #dddddd;
+#}
 li {
   float: left;
 }
