@@ -11,21 +11,83 @@
   <h1> Fractals, Fractals, FRACTALS! </h1>
       <h2> Period 10 CS - Foundations </h2>
       <h2> Angelina Ashie </h2>
-      
- <h3> Altered Fractal Tree </h3> 
+ <h3>  Fractal Trees </h3> 
+ <h4> Original Tree </h4>
+    <p> Basic Tree: (t, 4, 50, 20)</p>
+    <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/basic_tree.jpg" align=”right” align="top"
+       height="300"
+    width="350" /> 
+<p> My altered tree has certain modifications that make it distinct from the original tree: 
+  it carries the colors brown and green, much like an actual tree does, and this color distribution changes by depth. 
+  Also, the angle measure of the turtle is changed from 20 to 30, giving the altered tree its differing shape. </p>
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/tree.jpg" align=”right” align="top"
-       height="450"
-    width="550" /> 
-<p> colors: brown and green, changes by depth; also angle measure changed from 20 to 30 </p>
+       height="300"
+    width="350" /> 
+    <pre><code>
+      def tree(t, depth, size, angle):
+    if depth == 0:
+        t.fd(size)
+        t.bk(size)
+    else:
+        tree_dwelling_turtle.color('brown')
+        t.fd(size)
+        t.rt(angle)
+        tree(t, depth-1, size, angle)
+        t.lt(2 * angle)        
+        tree_dwelling_turtle.color('green')
+        tree(t, depth-1, size, angle)
+        t.rt(angle)
+        t.bk(size)
+      
+tree(tree_dwelling_turtle, 4, 50, 30)
+      </code></pre>
     
  <h3> 3-D Sierpinski Triangle </h3> 
+  <h4> Original Triangle </h4>
+    <p> Basic triangle: sierpinski(triangle_turtle, 5, 200) </p>
+<img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/basic_triangle.jpg" align=”right” align="top"
+       height="300"
+    width="350" /> 
+<p> This triangle is of a uniform color (black) and appears 2D. My altered function creates a 2 color triangle fractal that exaggerates the
+3-D effect, using the colors blue and yellow for maximum contrast, along with using a depth of 7 in lieu of 5. The right rotation of the turtle is changed from 120 to 60.</p>
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/triangle.jpg" align=”right” align="top"
-       height="450"
-    width="550" /> 
-<p> colors blue and yellow for max contrast, right rotation changed to 60 within the triangle function, depth 7 instead of 5  </p>
-  </body>
+       height="300"
+    width="350" /> 
+     <pre><code>
+     def triangle(t, size):
+    t.lt(60)
+    t.fd(size)
+    t.rt(60)
+    t.fd(size)
+    t.rt(60)
+    t.fd(size)
+    t.rt(180)
+
+def sierpinski(t, depth, size, scale_factor=1):
+    if depth == 1:
+        triangle(t, size)
+    else:
+        sierpinski(t, depth-1, size/2)
+        t.fd(size/2)
+        triangle_turtle.color('blue')
+        sierpinski(t, depth-1, size/2)
+        t.bk(size/2)
+        t.lt(60)
+        t.fd(size/2)
+        t.rt(60)
+        triangle_turtle.color('DarkGoldenrod')
+        sierpinski(t, depth-1, size/2)
+        t.rt(120)
+        t.fd(size/2)
+        t.lt(120)
+      sierpinski(triangle_turtle, 7, 500)
+      </code></pre>
   
  <h3> A Special Snowflake </h3> 
+    <p> The original koch curve is of a uniform color and depth, but the modifications made to the code using the randrange function
+      allows for randomization of color and depth, 
+      meaning each time the code is run the koch curve appears as a different color and a different snowflake variation, with a depth between 1 and 5. 
+    </p>
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/koch_basic.jpg" align=”right” align="top"
        height="250"
     width="350" /> 
@@ -35,6 +97,32 @@
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/koch_complex_2.jpg" align=”right” align="top"
        height="250"
     width="350" /> 
-<p> randomness of color and depth, so each time you get a different depth between 1 and 5, and a random color based on the rgb color values </p>
-  </body>
+     <pre><code>
+    koch_turtle = turtle.Turtle()
+x = random.randrange(0, 255)
+y = random.randrange(0, 255)
+z = random.randrange(0, 255)
+koch_turtle.color(x,y,z)
+koch_turtle.pensize(3)
+koch_turtle.penup()
+koch_turtle.setpos(-100, 0)
+koch_turtle.pendown()
+koch_turtle.speed(0)
+
+def triangle(size):
+    for angle in [-120, -120, 0]:
+        koch(koch_turtle, depth, size)
+        koch_turtle.left(angle)
+
+def koch(koch_turtle, depth, size):
+    if depth == 0:
+        koch_turtle.forward(size)
+    else:
+        for angle in [60, -120, 60, 0]:
+            koch(koch_turtle, depth - 1, size // 3)
+            koch_turtle.left(angle)
+size = 200
+depth = random.randrange(1, 5)
+triangle(size)
+      </code></pre>
 </html>
