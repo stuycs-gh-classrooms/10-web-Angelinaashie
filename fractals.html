@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <meta charset="utf-8">
-  <link href="fractals.css" rel="stylesheet"/>
-  <title> The First Book </title>
-</head>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Fractals</title>
+  </head>
 
   <body>
   <h1> Fractals, Fractals, FRACTALS! </h1>
       <h2> Period 10 CS - Foundations </h2>
       <h2> Angelina Ashie </h2>
+    <hr class="solid">
  <h3>  Fractal Trees </h3> 
- <h4> Original Tree </h4>
     <p> Basic Tree: (t, 4, 50, 20)</p>
     <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/basic_tree.jpg" align=”right” align="top"
-       height="300"
-    width="350" /> 
+       height="350"
+    width="450" /> 
 <p> My altered tree has certain modifications that make it distinct from the original tree: 
   it carries the colors brown and green, much like an actual tree does, and this color distribution changes by depth. 
   Also, the angle measure of the turtle is changed from 20 to 30, giving the altered tree its differing shape. </p>
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/tree.jpg" align=”right” align="top"
-       height="300"
+       height="350"
     width="350" /> 
     <pre><code>
       def tree(t, depth, size, angle):
@@ -41,17 +42,18 @@
 tree(tree_dwelling_turtle, 4, 50, 30)
       </code></pre>
     
+    <hr class="dotted">
+    
  <h3> 3-D Sierpinski Triangle </h3> 
-  <h4> Original Triangle </h4>
     <p> Basic triangle: sierpinski(triangle_turtle, 5, 200) </p>
 <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/basic_triangle.jpg" align=”right” align="top"
-       height="300"
-    width="350" /> 
-<p> This triangle is of a uniform color (black) and appears 2D. My altered function creates a 2 color triangle fractal that exaggerates the
+       height="350"
+    width="450" /> 
+<p> This fractal triangle is of a uniform color (black) and appears 2D. My altered function creates a 2 color triangle fractal that exaggerates the
 3-D effect, using the colors blue and yellow for maximum contrast, along with using a depth of 7 in lieu of 5. The right rotation of the turtle is changed from 120 to 60.</p>
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/triangle.jpg" align=”right” align="top"
-       height="300"
-    width="350" /> 
+       height="350"
+    width="450" /> 
      <pre><code>
      def triangle(t, size):
     t.lt(60)
@@ -81,21 +83,22 @@ def sierpinski(t, depth, size, scale_factor=1):
         t.lt(120)
       sierpinski(triangle_turtle, 7, 500)
       </code></pre>
-  
+  <hr class="dotted">
+    
  <h3> A Special Snowflake </h3> 
     <p> The original koch curve is of a uniform color and depth, but the modifications made to the code using the randrange function
       allows for randomization of color and depth, 
       meaning each time the code is run the koch curve appears as a different color and a different snowflake variation, with a depth between 1 and 5. 
     </p>
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/koch_basic.jpg" align=”right” align="top"
-       height="250"
-    width="350" /> 
+       height="350"
+    width="450" /> 
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/koch_complex.jpg" align=”right” align="top"
-       height="250"
-    width="350" /> 
+       height="350"
+    width="450" /> 
   <img class="wrap" src="http://homer.stuy.edu/~aashie60/fractal_images_for_p01/koch_complex_2.jpg" align=”right” align="top"
-       height="250"
-    width="350" /> 
+       height="350"
+    width="450" /> 
      <pre><code>
 koch_turtle = turtle.Turtle()
 x = random.randrange(0, 255)
